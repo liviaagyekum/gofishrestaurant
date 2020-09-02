@@ -1,0 +1,458 @@
+@charset "UTF-8";
+/*CSS Styles*/
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Great+Vibes&family=Herr+Von+Muellerhoff&family=Rajdhani&family=Source+Sans+Pro&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Rajdhani', sans-serif;
+  line-height: 1.5;
+}
+.title-text{
+  font-size: 40px;
+  text-align: center;
+}
+ul {
+  list-style: none;
+
+}
+a {
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+/*-----Nav Bar----------*/
+#menu-bar{
+  width: 50px;
+  height: 10px;
+  margin: 50px 10px 10px 20px;
+  position: fixed;
+  z-index: 1;
+  cursor: pointer;
+}
+.menu-list{
+  display: flex;
+}
+/*.bar{
+  background: #008080;
+  border-radius: 10%;
+  transition: 4s;
+}
+#bar1{
+  width: 40px;
+  height: 10px;
+  transform: translateY(-4px);
+}
+#bar2{
+  width: 40px;
+  height: 10px;
+}
+#bar3{
+  width: 40px;
+  height: 10px;
+  transform: translateY(4px);
+}
+.change .bar{
+  background: #fff;
+}
+.change#bar1{
+  transform: translateY(6px);
+  rotate: z(45deg);
+}
+.change#bar3{
+  transform: translateY(-15px);
+  rotate: z(-45deg);
+}
+.change#bar2{
+  opacity: 0%;
+}*/
+.menu-list li a{
+  padding: 10px 15px;
+  color: #6c707c;
+  font-size: 12px;
+}
+.menu-list li:hover{
+  background-color: #008080;
+  color: #FFFFFF !important;
+  font-weight: 700;
+  transition: all ease 0.4s;
+}
+/*
+.nav li{
+  margin: 20px 10px 10px 20px;
+  padding-top: 10px;
+  list-style-type: none;
+}*/
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 50px;
+  background-color: #F4F7FF;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.05);
+  z-index: 1;
+}
+.change-btn{
+  display: block;
+}
+/*-------Header---------*/
+.header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url('/Users/liviaagyekum/Desktop/Web Development/Go Fish Restaurant/images/cover-pic2.jpg') center/cover no-repeat fixed;
+  margin-top: auto;
+}
+.hero{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
+.hero .title{
+  color: #fff;
+  font-size: 50px;
+}
+.hero-button{
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 13px 20px;
+  border-radius: 200px;
+  font-weight: bold;
+  font-family: 'Cabin', sans-serif;
+  background: #008080;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid #008080;
+  margin-top: 10px;
+}
+.hero-button:hover{
+  background: #fff;
+  color: #008080;
+  border: none;
+}
+.pulsate{
+  animation: pulsate 3s ease-in-out;
+  animation-iteration-count: infinite;
+  opacity: .7;
+  color: #000;
+}
+@-webkit-keyframes pulsate{
+  0%{
+    opacity: .3;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: .3;
+  }
+}
+/*----End of header------------*/
+/*--------About Us--------------*/
+#about-us{
+  padding: 40px;
+}
+.about{
+  margin: 30px 0;
+  display: flex;
+}
+.about-icon .fas{
+  font-size: 60px;
+  color: #008080;
+  margin-right: 20px;
+}
+.about-subtitle{
+  text-transform: capitalize;
+  color: #008080;
+  font-size: 25px;
+}
+.about-info{
+  margin-top: 10px;
+  line-height: 1.5;
+}
+.about-icon:hover .fas,
+.about-subtitle:hover{
+  transition: transform 2s ease, color 2s ease;
+  transform: translateY(-10px);
+  color: black;
+  cursor: pointer;
+}
+@media screen and (min-width: 576px){
+  .about-center{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .about{
+    flex: 0 0 calc(50% - 16px);
+  }
+}
+@media screen and (min-width: 972px){
+  .about{
+    flex: 0 0 calc(33.3% - 16px);
+  }
+}
+/*--------End of About Us-------*/
+/*---------Menu Section---------*/
+.menu-image{
+  min-height: 80vh;
+  background: url('/Users/liviaagyekum/Desktop/Web Development/Go Fish Restaurant/images/seafood.jpg') center/cover fixed no-repeat;
+}
+.menu-text{
+  min-height: 80vh;
+  align-items: center;
+  background: #008080;
+  columns: #000;
+  padding: 40px 0;
+}
+.menu-text-center{
+  width: 90%;
+  margin: 0 auto;
+}
+.menu-text h1{
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.menu-text p{
+  margin: 20px 0;
+  line-height: 2;
+}
+.menu-text a{
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 13px 20px;
+  border-radius: 200px;
+  font-weight: bold;
+  background: rgba(10, 10, 10);
+  color: #fff;
+  border: 2px solid #000;
+}
+.menu-text a:hover{
+  color: #008080;
+  background: #fff;
+  border: none;
+}
+@media screen and (min-width: 776px){
+  .menu{
+    display: flex;
+  }
+  .menu-text{
+    flex: 0 0 30%;
+  }
+  .menu-image{
+    flex: 0 0 70%;
+    clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
+  }
+  .menu{
+    background: #008080;
+  }
+}
+/*--End of Menu Section-------------*/
+/*-----Social Icons-----------------*/
+#social-icons{
+  height: 150px;
+  background: #fff;
+  text-align: center;
+  padding: 50px 0 50px 0;
+}
+#social-icons a{
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 5px;
+  font-size: 40px;
+  border-radius: 5px;
+  transition: transform 2s ease, color 2s ease
+}
+#social-icons a:hover{
+  transform: translateY(-20px);
+}
+.facebook{
+  color: #5d7ca2;
+}
+.twitter{
+  color: #4397fe;
+}
+.instagram{
+  color: #ae42bf
+}
+.plus{
+  color: #bf4242;
+}
+/*--------End od Social Icons---------------*/
+/*------Numbers------------------*/
+.number{
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('/Users/liviaagyekum/Desktop/Web Development/Go Fish Restaurant/images/pizza.jpg') center/cover no-repeat fixed;
+  padding: 60px 0;
+  color: #fff;
+}
+.number p{
+  font-size: 30px;
+  font-weight: bold;
+}
+.number:hover{
+  color: #48D1CC;
+}
+.number .fas{
+  font-size: 60px;
+  margin: 20px 0;
+}
+.number h3{
+  text-transform: uppercase;
+}
+@media screen and (min-width: 576px){
+  #numbers{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 992px){
+  #numbers{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/*---------End of Numbers-----------------*/
+/*-------------Cards--------------------*/
+#food{
+  padding: 20px;
+}
+.food-container{
+  max-width: 90ww;
+  margin: 0 auto;
+}
+.food-card{
+  position: relative;
+  background: linear-gardient(rgba(0, 102, 102, 1), rgba(0, 102, 102 ,1));
+  margin: 20px 0;
+  color: #000;
+  overflow: hidden;
+  padding: 3px;
+  border-radius: 16px;
+  border: 1px solid #008080;
+  box-shadow: 2px 3px 1px 1px #006666;
+}
+#food img{
+  width: 100%;
+  min-height: 100%;
+  display: block;
+  transition: transform 4s;
+}
+.img-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 4s;
+}
+.img-footer{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+  font-size: 20px;
+  opacity: 0;
+  color: #000;
+  transition: opacity 4s;
+}
+.img-text h1{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.food-card:hover img{
+  opacity: 0.4;
+  transform: scale(1.3);
+}
+.food-card:hover .img-text,
+.food-card:hover .img-footer{
+  opacity: 1;
+}
+.food-btn{
+  display: inline-block;
+  background: #000;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 12px 32px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 180px;
+  cursor: pointer;
+  margin-top: 16px;
+  transition: all 0.3s ease-in-out;
+  font-size: 10px;
+  outline: none;
+}
+.food-btn:hover{
+  color: #008080;
+  background: #fff;
+  border: #000;
+  outline: none;
+}
+.fas{
+  font-size: 30px;
+}
+@media screen and (min-width: 576px){
+  .food-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 16px;
+  }
+}
+@media screen and (min-width: 992px){
+  .food-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 16px;
+  }
+}
+/*---------End of card section------------------*/
+/*---------Gallery Section----------------------*/
+#galley{
+  padding: 20px;
+  background: #fff;
+}
+.gallery-item{
+  background: linear-gardient(rgba(0, 102, 102, 1), rgba(0, 102, 102 ,1));
+}
+.gallery-item img{
+  display: block;
+  width: 100%;
+  opacity: 1;
+  transition: opacity 2s ease;
+}
+.gallery-item img:hover{
+  opacity: 0.5;
+}
+@media screen and (min-width: 576px){
+  #gallery-center{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 992px){
+  #gallery-center{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

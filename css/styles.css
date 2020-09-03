@@ -110,7 +110,7 @@ nav{
 .header {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  url('/Users/liviaagyekum/Desktop/Web Development/Go Fish Restaurant/images/cover-pic2.jpg') center/cover no-repeat fixed;
+  url("../images/cover-pic2.jpg") center/cover no-repeat fixed;
   margin-top: auto;
 }
 .hero{
@@ -212,7 +212,7 @@ nav{
 /*---------Menu Section---------*/
 .menu-image{
   min-height: 80vh;
-  background: url('/Users/liviaagyekum/Desktop/Web Development/Go Fish Restaurant/images/seafood.jpg') center/cover fixed no-repeat;
+  background: url('../images/seafood.jpg') center/cover fixed no-repeat;
 }
 .menu-text{
   min-height: 80vh;
@@ -300,7 +300,7 @@ nav{
 /*------Numbers------------------*/
 .number{
   text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('/Users/liviaagyekum/Desktop/Web Development/Go Fish Restaurant/images/pizza.jpg') center/cover no-repeat fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('../images/pizza.jpg') center/cover no-repeat fixed;
   padding: 60px 0;
   color: #fff;
 }

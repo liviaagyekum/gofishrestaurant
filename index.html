@@ -20,7 +20,8 @@
           <li><a href="#main-section" class="active">Home</a></li>
           <li><a href="#about-us">About</a></li>
           <li><a href="#numbers">Menu</a></li>
-          <li><a href="#contact-form">Contact</a></li>
+          <li><a href="#reservation">Reservation</a></li>
+          <li><a href="#gallery">Gallery</a></li>
         </ul>
       </nav>
       <!--End of Nav Bar--------->
@@ -29,7 +30,7 @@
           <div class="hero">
               <a href="#"><img src="images/fish-logo2.png" alt="Logo art"/></a>
               <h1 class="title">The Freshest Food Around</h1>
-              <a href="#" class="hero-button pulsate">Book a table</a>
+              <a href="#reservation" class="hero-button pulsate">Book a table</a>
           </div>
       </header>
     </section>
@@ -204,8 +205,58 @@
         </div>
       </section>
       <!--End of card section------------------->
+      <!--reservation section----------------->
+      <section id="reservation">
+        <div class="res-contact">
+          <div class="res-time">
+            <h2 class="res-heading">Business Hours</h2>
+            <h3 class="res-days">Monday-Sunday</h3>
+            <p>7am - 11am (Breakfast)</p>
+            <p>11am - 10pm (Lunch/Dinner)</p>
+            <hr>
+            <h4 class="heading-phone">Call Us: (202)-541-2010</h4>
+            <p>Address: 600 13th St NW Washington DC, 20005</p>
+          </div>
+          <div class="res-form">
+            <form action="#">
+              <h2 class="form-heading">Reservation Online</h2>
+              <div class="form-field">
+                <p>Your Name</p>
+                <input type="text" name="" value="" placeholder="Your Name">
+              </div>
+              <div class="form-field">
+                <p>Your Email</p>
+                <input type="email" name="" value="" placeholder="Your Email">
+              </div>
+              <div class="form-field">
+                <p>Date</p>
+                <input type="date">
+              </div>
+              <div class="form-field">
+                <p>Time</p>
+                <input type="time">
+              </div>
+              <div class="form-field">
+                <p>How Many People</p>
+                <select name="select" id="select-num">
+                  <option value="1">1 person</option>
+                  <option value="2">2 persons</option>
+                  <option value="3">3 persons</option>
+                  <option value="4">4 persons</option>
+                  <option value="5">5 persons</option>
+                  <option value="6">6 persons</option>
+                  <option value="7">7 persons</option>
+                  <option value="8">8 persons</option>
+                </select>
+              </div>
+              <button class="btn" type="button" name="button">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!--end of reservation section--------->
       <!--Gallery--------------------------->
-      <section id="Gallery">
+      <section id="gallery">
         <div>
           <h2 class="title-text">Restaurant Gallery</h2>
         </div>
@@ -235,8 +286,14 @@
             <a href="images/girls.jpg" target="_blank"><img src="images/girls.jpg" alt="girls drinking"></a>
           </article>
         </div>
+      <!--end of gallery section---------->
+      <!--footer---------------------->
+      <section id="footer">
+        <footer class="foot">
+        <p>Copyright &copy; 2020 Livia Agyekum. All rights reserved</p>
+        </footer>
       </section>
-
+      <!--end of footer--------------------->
       <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="magnific?jquery.magnific-popup.min.js"></script>
